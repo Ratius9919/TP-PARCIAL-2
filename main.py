@@ -2,7 +2,7 @@ def crear_matriz(n, m):
     return [[0] * m for fila in range(n)]
 
 
-def llenar_matriz(m):
+def llenar_matriz(m): #Llenamos la matriz creada de listas dentro de cada casillero
     filas = len(m)
     columnas = len(m[0])
     for f in range(filas):
@@ -10,14 +10,14 @@ def llenar_matriz(m):
             m[f][c] = lista = []
 
 
-def mostrar_matriz(m):
+def mostrar_matriz(m): #Imprimimos la fila junto a la cadena "Mes" y su respectivo nro
     a = 1
     for fila in m:
         print("Mes", a, fila, ":")
         a += 1
 
 
-def ajustar_meses(m):
+def ajustar_meses(m): #Ajustamos los dias del mes usando rebanadas.
     filas = len(m)
     columnas = len(m[0])
     a = 0
